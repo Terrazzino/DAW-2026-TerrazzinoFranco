@@ -56,16 +56,36 @@
 
             <section>
                 <title><strong>SUSCRIPCION</strong></title>
-                <form>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
-
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido">
-
-                    <label for="correo">Correo</label>
-                    <input type="email" name="correo" id="correo">
-
+                <form action="/submit" method="post">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" required>
+                    </div>
+                    <div>
+                        <label for="correo">Correo</label>
+                        <input type="email" name="correo" id="correo" required>
+                    </div>
+                    <div>
+                        <label for="comentarios">Comentarios</label>
+                        <textarea name="comentarios" id="comentarios" maxlength="140"></textarea>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>¿Cual es tu opinión sobre la noticia?</legend>
+                                <input type="radio" name="Muy interesante" id="Muy interesante" value="Muy interesante">
+                                <label for="Muy interesante">Muy interesante</label>
+                                <input type="radio" name="Interesante" id="Interesante" value="Interesante">
+                                <label for="Interesante">Interesante</label>
+                                <input type="radio" name="No me interesa" id="No me interesa" value="No me interesa">
+                                <label for="No me interesa">No me interesa</label>
+                                <input type="radio" name="No me gusto" id="No me gusto" value="No me gusto">
+                                <label for="No me gusto">No me gusto</label>
+                        </fieldset>
+                    </div>
                     <button type="submit"><span style="background-color: black;color: white;">ENVIAR</span></button>
                 </form>
             </section>
