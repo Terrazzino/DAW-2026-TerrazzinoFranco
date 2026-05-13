@@ -1,0 +1,95 @@
+body{
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header a{
+    text-decoration: none;
+    color:white;
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+}
+
+header{
+    background-color: #16b9f8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+header .comunidad{
+    margin:5px;
+    display: flex;
+    gap: 5px;
+}
+
+header .redes{
+    margin: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: 20px;
+}
+
+.flyer-conteiner{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.logo-anchor{
+    height: 50px;
+}
+
+@media(min-width:768px){
+
+}
+
+@media(min-width:1024px){
+
+}
+
+@media(min-width:1440px){
+
+}
