@@ -2,8 +2,9 @@ body{
     width: 100%;
     font-size: 16px;
     line-height: 1.5;
-    margin: 0;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 a{
@@ -41,6 +42,10 @@ header .redes{
     gap: 5px;
 }
 
+.banner .opciones-menu{
+    display: none;
+}
+
 nav{
     background-color: black;
     color: white;
@@ -50,18 +55,10 @@ nav{
     align-items: center;
 }
 
-main{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 article{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
-    margin: 20px;
 }
 
 .flyer-conteiner{
@@ -74,22 +71,87 @@ article{
 aside{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 40%;
+}
+
+aside h2{
+    margin: 0;
+}
+
+aside div{
+    display: inline;
+    text-align: center;
+    margin: 10px;
+}
+
+.ver-mas{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(235, 235, 235);
+    padding: 5px;
 }
 
 .logo-anchor{
     height: 50px;
 }
 
-@media(min-width:768px){
-
+.link-buttom{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    padding: 4px;
 }
 
-@media(min-width:1024px){
-
+.link-azul{
+    color: blue;
 }
 
-@media(min-width:1440px){
+main{
+    margin: 20px;
+}
 
+hr{
+    border: 0.1px solid rgb(154, 154, 154);
+    width: 100%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a{
+    color: white;
+}
+
+@media(min-width:610px){
+    .banner .opciones-menu{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .banner .opciones-menu a{
+        padding: 2px;
+
+    }
+}
+
+@media(min-width:940px){
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    article{
+        width: 60%;
+    }
+    aside{
+        width: 40%;
+    }
 }
